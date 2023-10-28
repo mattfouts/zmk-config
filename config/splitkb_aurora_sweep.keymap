@@ -54,8 +54,6 @@
             key-positions = <17 18>;
             bindings = <&kp RGUI>;
         };
-// hello world
-// testing agian
 
     };
 
