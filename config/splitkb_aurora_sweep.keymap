@@ -8,16 +8,19 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-// #define base 0
-// #define sym 1
-// #define nav 2
-// #define tri 3
+/*
+#define base 0
+#define sym 1
+#define nav 2
+#define tri 3
+*/
 
 &mt {
   //  flavor = "tap-preferred";
    // tapping_term_ms = <200>;
 };
 
+/*
 / {
     conditional_layers {
         compatible = "zmk,conditional-layers";
@@ -27,6 +30,7 @@
         };
     };
 };
+*/
 
 / {
 
