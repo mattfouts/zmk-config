@@ -20,7 +20,7 @@
    // tapping_term_ms = <200>;
 };
 
-/*
+
 / {
     conditional_layers {
         compatible = "zmk,conditional-layers";
@@ -30,7 +30,7 @@
         };
     };
 };
-*/
+
 
 / {
 
@@ -100,11 +100,11 @@
         //│  !       │  @       │  #       │  $       │  %       │   │  ^       │  &       │  *       │  `       │  ~       │
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS   &kp ASTRK  &kp GRAVE   &kp TILDE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  "       │  [       │  {       │  (       │          │   │   /      │  -       │  _       │     :    │  ;       │
-            &kp DQT  &kp LBKT   &kp LBRC   &kp LPAR   &kp CAPS         &kp FSLH   &kp MINUS  &kp UNDER  &kp COLON   &kp SEMI
+        //│  '       │  [       │  {       │  (       │          │   │   /      │  -       │  _       │     :    │  ;       │
+            &kp SQT  &kp LBKT   &kp LBRC   &kp LPAR   &kp CAPS         &kp FSLH   &kp MINUS  &kp UNDER  &kp COLON   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  '       │  ]       │  }       │  )       │          │   │    \     │    +     │  =       │  │       │   ?      │
-            &kp SQT     &kp RBKT   &kp RBRC   &kp RPAR   &trans         &kp BSLH   &kp PLUS  &kp EQUAL   &kp PIPE  &kp QMARK
+        //│  "       │  ]       │  }       │  )       │          │   │    \     │    +     │  =       │  │       │   ?      │
+            &kp DQT     &kp RBKT   &kp RBRC   &kp RPAR   &trans         &kp BSLH   &kp PLUS  &kp EQUAL   &kp PIPE  &kp QMARK
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
