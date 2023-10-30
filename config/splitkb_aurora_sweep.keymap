@@ -15,8 +15,8 @@
 #define tri 3
 
 &mt {
-  //  flavor = "tap-preferred";
-   // tapping_term_ms = <200>;
+    flavor = "tap-preferred";
+    tapping_term_ms = <200>;
 };
 
 
@@ -91,7 +91,7 @@
                                            &lt sym TAB  &kp LSHIFT    &kp SPACE   &lt nav TAB
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
-        };
+        }
 
         sym_left_layer {
             bindings = <
@@ -138,3 +138,4 @@
 
     };
 };
+zzio
