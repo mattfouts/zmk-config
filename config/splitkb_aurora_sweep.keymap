@@ -8,12 +8,11 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-/*
+
 #define base 0
 #define sym 1
 #define nav 2
 #define tri 3
-*/
 
 &mt {
   //  flavor = "tap-preferred";
@@ -25,8 +24,8 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
+            if-layers = <sym nav>;
+            then-layer = <tri>;
         };
     };
 };
@@ -89,7 +88,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ ENTER    │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                           &lt 1 TAB  &kp LSHIFT    &kp SPACE   &lt 2 TAB
+                                           &lt sym TAB  &kp LSHIFT    &kp SPACE   &lt nav TAB
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -123,7 +122,7 @@
         //│          │          │          │          │          │   │          │ HOME     │ PAGE DN  │ PAGE UP  │ END      │
             &trans    &trans     &trans     &trans      &trans           &trans     &kp HOME   &kp PG_DN  &kp PG_UP  &kp END 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                          &lt 1 ESC &mt LSFT ENTER    &trans     &trans
+                                          &lt sym ESC &mt LSFT ENTER    &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
