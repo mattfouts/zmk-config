@@ -99,7 +99,7 @@
         //│  !       │  @       │  #       │  $       │  %       │   │  ^       │  &       │  *       │  `       │  ~       │
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS   &kp ASTRK  &kp GRAVE   &kp TILDE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  '       │  [       │  {       │  (       │   CAPS    │   │   /      │  -       │  _       │     :    │  ;      │
+        //│  '       │  [       │  {       │  (       │   CAPS    │   │   /      │  -       │  _       │     :    │  ;       │
             &kp SQT  &kp LBKT   &kp LBRC   &kp LPAR   &kp CAPS         &kp FSLH   &kp MINUS  &kp UNDER  &kp COLON   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  "       │  ]       │  }       │  )       │          │   │    \     │    +     │  =       │  │       │   ?      │
@@ -120,7 +120,7 @@
             &kp PG_UP   &trans   &kp UARW     &trans     &kp HOME     &kp PSCRN    &kp LGUI  &kp LALT   &kp LCTRL  &kp DEL 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ PG DOWN  │   LEFT   │ DOWN     │   RIGHT  │    END   │   │  INSERT  │          │          │          │          │
-            &kp PG_DN  &kp LARW   &kp DARW    &kp RARW  &kp END        &kp INS     &trans   &trans      &trans    &trans    |
+            &kp PG_DN  &kp LARW   &kp DARW    &kp RARW  &kp END        &kp INS     &trans   &trans      &trans    &bt BT_CLR
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                           &lt sym ESC &mt LSFT ENTER    &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -134,14 +134,14 @@
             &kp F1    &kp F2     &kp F3     &kp F4     &trans           &trans     &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼────────────┼────────────┼──────────┤
         //│   F5     │   F6     │ F7       │   F8     │          |   |          │          │            │            │ DELETE   │
-            &kp F5    &kp F6      &kp F7     &kp F8    &trans         &kp PSCRN  &kp C_MUTE &kp C_VOL_UP &kp C_VOL_DN &kp DEL 
+            &kp F5    &kp F6      &kp F7     &kp F8    &trans         &kp PSCRN     &trans    &trans       &trans      &kp DEL 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼────────────┼────────────┼──────────┤
         //│ F9       │   F10    │ F11      │   F12    │          │   │  INSERT  │          │            │            │          │
-            &kp F9      &kp F10   &kp F11    &kp F12  &trans         &kp INS     &bt BT_PRV &bt BT_NXT &bt BT_SEL &bt BT_CLR 
+            &kp F9      &kp F10   &kp F11    &kp F12  &trans         &kp INS        &trans     &trans       &trans     &bt BT_CLR 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼────────────┴────────────┴──────────╯
                                           &lt sym ESC &mt LSFT ENTER    &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
-            >;
+                       >;
         };
 
     };
