@@ -117,7 +117,7 @@
             &kp N1    &kp N2     &kp N3     &kp N4     &kp N5          &kp N6     &kp N7     &kp N8     &kp N9      &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│   PG UP  │ PREV WORD│ UP       │ NEXT WORD│   HOME   |   |          │    GUI   │   ALT    │  CTRL    │ DELETE   │
-            &kp PG_UP   &trans   &kp UARW     &trans     &kp HOME     &kp PSCRN    &kp LGUI  &kp LALT   &kp LCTR  &kp DEL 
+            &kp PG_UP   &trans   &kp UARW     &trans     &kp HOME     &kp PSCRN    &kp LGUI  &kp LALT   &kp LCTRL  &kp DEL 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ PG DOWN  │   LEFT   │ DOWN     │   RIGHT  │    END   │   │  INSERT  │          │          │          │          │
             &kp PG_DN  &kp LARW   &kp DARW    &kp RARW  &kp END        &kp INS     &trans   &trans      &trans    &trans    |
@@ -145,3 +145,4 @@
         };
 
     };
+};
