@@ -116,11 +116,11 @@
         //│ 1        │  2       │  3       │  4       │  5       │   │ 6        │ 7        │ 8        │ 9        │   0      │
             &kp N1    &kp N2     &kp N3     &kp N4     &kp N5          &kp N6     &kp N7     &kp N8     &kp N9      &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│   PG UP  │ PREV WORD│ UP       │ NEXT WORD│   HOME   |   |          │    GUI   │   ALT    │  CTRL    │ DELETE   │
-            &kp PG_UP   &trans   &kp UARW     &trans     &kp HOME     &kp PSCRN    &kp LGUI  &kp LALT   &kp LCTRL  &kp DEL 
+        //│   PG UP  │ LEFT     │   UP     │ RIGHT    │   HOME   |   |          │    GUI   │   ALT    │  CTRL    │ DELETE   │
+            &kp PG_UP  &kp LARW   &kp UARW    &kp RARW      HOME     &kp PSCRN    &kp LGUI  &kp LALT   &kp LCTRL  &kp DEL 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ PG DOWN  │   LEFT   │ DOWN     │   RIGHT  │    END   │   │  INSERT  │          │          │          │          │
-            &kp PG_DN  &kp LARW   &kp DARW    &kp RARW  &kp END        &kp INS     &trans   &trans      &trans    &bt BT_CLR 
+        //│ PG DOWN  │          │ DOWN     │          │    END   │   │  INSERT  │          │          │          │          │
+            &kp PG_DN  &trans    &kp DARW   &trans     &kp END        &kp INS     &trans   &trans      &trans     &trans 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                           &lt sym ESC &mt LSFT ENTER    &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -134,7 +134,7 @@
             &kp F1    &kp F2     &kp F3     &kp F4     &trans           &trans     &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼────────────┼────────────┼──────────┤
         //│   F5     │   F6     │ F7       │   F8     │          |   |          │          │            │            │ DELETE   │
-            &kp F5    &kp F6      &kp F7     &kp F8    &trans         &kp PSCRN &kp C_MUTE &kp C_VOL_UP  &kp C_VOL_DN  &kp DEL 
+            &kp F5    &kp F6      &kp F7     &kp F8    &trans         &kp PSCRN &kp C_MUTE &kp C_VOL_DN  &kp C_VOL_UP  &kp DEL 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼────────────┼────────────┼──────────┤
         //│ F9       │   F10    │ F11      │   F12    │          │   │  INSERT  │          │            │            │          │
             &kp F9      &kp F10   &kp F11    &kp F12  &trans         &kp INS     &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 0  &bt BT_CLR
