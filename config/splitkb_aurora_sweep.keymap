@@ -116,11 +116,11 @@
         //│ 1        │  2       │  3       │  4       │  5       │   │ 6        │ 7        │ 8        │ 9        │   0      │
             &kp N1    &kp N2     &kp N3     &kp N4     &kp N5          &kp N6     &kp N7     &kp N8     &kp N9      &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │ PREV WORD│ UP       │ NEXT WORD│          |   |          │ LEFT     │ DOWN     │ UP       │ DELETE    │
-            &trans      &trans   &kp UARW     &trans     &trans          &kp PSCRN    &kp LARW   &kp DARW   &kp UARW   &kp DEL 
+        //│   PG UP  │ PREV WORD│ UP       │ NEXT WORD│   HOME   |   |          │          │          │          │ DELETE    │
+            &kp PG_UP   &trans   &kp UARW     &trans     &kp HOME     &kp PSCRN    &trans     &trans      &trans   &kp DEL 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │   LEFT   │ DOWN     │   RIGHT  │          │   │  INSERT  │ HOME     │ PAGE DN  │ PAGE UP  │ END      │
-            &trans     &kp LARW     &kp DARW    &kp RARW    &trans        &kp INS     &kp HOME   &kp PG_DN  &kp PG_UP  &kp END 
+        //│ PG DOWN  │   LEFT   │ DOWN     │   RIGHT  │    END   │   │  INSERT  │          │          │          │          │
+            &kp PG_DN  &kp LARW   &kp DARW    &kp RARW  &kp END        &kp INS     &trans   &trans      &trans    &trans 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                           &lt sym ESC &mt LSFT ENTER    &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
