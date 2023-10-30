@@ -120,7 +120,7 @@
             &kp PG_UP   &trans   &kp UARW     &trans     &kp HOME     &kp PSCRN    &trans     &trans      &trans   &kp DEL 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ PG DOWN  │   LEFT   │ DOWN     │   RIGHT  │    END   │   │  INSERT  │          │          │          │          │
-            &kp PG_DN  &kp LARW   &kp DARW    &kp RARW  &kp END        &kp INS     &trans   &trans      &trans    &trans 
+            &kp PG_DN  &kp LARW   &kp DARW    &kp RARW  &kp END        &kp INS     &trans   &trans      &trans    &bt BT_CLR 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                           &lt sym ESC &mt LSFT ENTER    &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
