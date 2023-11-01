@@ -39,12 +39,13 @@
             bindings = <&kp BSPC>, <&kp DEL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        lsft_e_cw: lshift_e_capsword {
+
+        lsft_cw: lshift_capsword {
             compatible = "zmk,behavior-tap-dance";
-            label = "LSHIFT_E_CAPSWORD";
+            label = "LSHIFT_CAPSWORD";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mt LSFT ENTER>, <&caps_word>;
+            bindings = <&kp LSFT>, <&caps_word>;
         };
     };
 };
@@ -104,9 +105,9 @@
            &mt LCTRL A &mt LSHFT S &mt LALT D &mt LGUI F &kp G         &kp H    &mt LGUI J &mt LALT K &mt LSHFT L  &bspc_del
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ CTRL    │
-            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp RCTRL
+            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &mt RCTRL ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                           &lt sym TAB &lsft_e_cw  &kp SPACE   &lt nav TAB
+                                           &lt sym TAB &lsft_cw  &kp SPACE   &lt nav TAB
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
