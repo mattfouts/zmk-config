@@ -39,13 +39,12 @@
             bindings = <&kp BSPC>, <&kp DEL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-
         lsft_e_cw: lshift_e_capsword {
             compatible = "zmk,behavior-tap-dance";
             label = "LSHIFT_E_CAPSWORD";
             #binding-cells = <0>;
-            tapping_term_ms = <200>;
-            bindings = <&mt LSFT ENTER>, <&caps_word>
+            tapping-term-ms = <200>;
+            bindings = <&mt LSFT ENTER>, <&caps_word>;
         };
     };
 };
