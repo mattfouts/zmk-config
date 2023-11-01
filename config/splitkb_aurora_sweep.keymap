@@ -46,7 +46,7 @@
             #binding-cells = <0>;
             tapping_term_ms = <200>;
             bindings = <&mt LSFT ENTER>, <&caps_word>
-        }
+        };
     };
 };
 
