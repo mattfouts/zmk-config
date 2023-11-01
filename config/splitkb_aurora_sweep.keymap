@@ -54,7 +54,7 @@
     macros {
         win_sleep: win_sleep {
             compatible = "zmk,behavior-macro";
-            label = "WIN_SLEEP"
+            label = "WIN_SLEEP";
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LGUI>
