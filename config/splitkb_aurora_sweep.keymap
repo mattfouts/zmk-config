@@ -39,6 +39,14 @@
             bindings = <&kp BSPC>, <&kp DEL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        lsft_e_cw: lshift_e_capsword {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LSHIFT_E_CAPSWORD";
+            #binding-cells = <0>;
+            tapping_term_ms = <200>;
+            bindings = <&mt LSFT ENTER>, <&caps_word>
+        }
     };
 };
 
@@ -99,7 +107,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ CTRL    │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp RCTRL
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                           &lt sym TAB &mt LSHFT ENTER  &kp SPACE   &lt nav TAB
+                                           &lt sym TAB &lsft_e_cw  &kp SPACE   &lt nav TAB
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -127,11 +135,11 @@
         //│ 1        │  2       │  3       │  4       │  5       │   │ 6        │ 7        │ 8        │ 9        │   0      │
             &kp N1    &kp N2     &kp N3     &kp N4     &kp N5          &kp N6     &kp N7     &kp N8     &kp N9      &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│   PG UP  │ LEFT     │   UP     │ RIGHT    │   HOME   |   |          │    GUI   │   ALT    │  CTRL    │ DELETE   │
-            &kp PG_UP  &kp LARW   &kp UARW    &kp RARW   &kp HOME     &kp PSCRN    &kp LGUI  &kp LALT   &kp LCTRL  &kp DEL 
+        //│   PG UP  │ LEFT     │   UP     │ RIGHT    │   END   |   |          │    GUI   │   ALT    │  CTRL    │ DELETE   │
+            &kp PG_UP  &kp LARW   &kp UARW    &kp RARW   &kp END     &kp PSCRN    &kp LGUI  &kp LALT   &kp LCTRL  &kp DEL 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ PG DOWN  │          │ DOWN     │          │    END   │   │  INSERT  │          │          │          │          │
-            &kp PG_DN  &trans    &kp DARW   &trans     &kp END        &kp INS     &trans   &trans      &trans     &trans 
+        //│ PG DOWN  │          │ DOWN     │          │    HOME   │   │  INSERT  │          │          │          │          │
+            &kp PG_DN  &trans    &kp DARW   &trans     &kp HOME        &kp INS     &trans   &trans      &trans     &trans 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                           &lt sym ESC &mt LSFT ENTER    &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
