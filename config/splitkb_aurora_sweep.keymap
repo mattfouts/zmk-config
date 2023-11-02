@@ -77,25 +77,25 @@
             bindings = <&kp ESC>;
         };
 
-         combo_tab {
-            timeout-ms = <50>;
-            key-positions = <10 11>;
-            bindings = <&kp TAB>;
-        };
+        // combo_tab {
+        //    timeout-ms = <50>;
+        //    key-positions = <10 11>;
+        //    bindings = <&kp TAB>;
+        //};
 
-            combo_ralt {
+        combo_ralt {
             timeout-ms = <50>;
             key-positions = <17 16>;
             bindings = <&kp RALT>;
         };
 
-                    combo_lalt {
+        combo_lalt {
             timeout-ms = <50>;
             key-positions = <11 12>;
             bindings = <&kp LALT>;
         };
 
-                           combo_lgui {
+        combo_lgui {
             timeout-ms = <50>;
             key-positions = <12 13>;
             bindings = <&kp LGUI>;
@@ -124,7 +124,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ CTRL    │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &mt RCTRL ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                           &lt sym TAB &lsft_cw  &kp SPACE   &lt nav TAB
+                                           &lt sym TAB &lsft_cw       &kp SPACE  &lt nav SPACE
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -135,7 +135,7 @@
         //│  !       │  @       │  #       │  $       │  %       │   │  ^       │  &       │  *       │  `       │  ~       │
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS   &kp ASTRK  &kp GRAVE   &kp TILDE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  '       │  [       │  {       │  (       │   CAPS    │   │   /      │  -       │  _       │     :    │  ;       │
+        //│  '       │  [       │  {       │  (       │   CAPS   │   │   /      │  -       │  _       │     :    │  ;       │
             &kp SQT  &kp LBKT   &kp LBRC   &kp LPAR   &kp CAPS         &kp FSLH   &kp MINUS  &kp UNDER  &kp COLON   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  "       │  ]       │  }       │  )       │          │   │    \     │    +     │  =       │  │       │   ?      │
@@ -152,10 +152,10 @@
         //│ 1        │  2       │  3       │  4       │  5       │   │ 6        │ 7        │ 8        │ 9        │   0      │
             &kp N1    &kp N2     &kp N3     &kp N4     &kp N5          &kp N6     &kp N7     &kp N8     &kp N9      &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│   PG UP  │ LEFT     │   UP     │ RIGHT    │   END   |   |          │    GUI   │   ALT    │  CTRL    │ DELETE   │
+        //│   PG UP  │ LEFT     │   UP     │ RIGHT    │   END    |   |          │    GUI   │   ALT    │  CTRL    │ DELETE   │
             &kp PG_UP  &kp LARW   &kp UARW    &kp RARW   &kp END     &kp PSCRN    &kp LGUI  &kp LALT   &kp LCTRL  &kp DEL 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ PG DOWN  │          │ DOWN     │          │    HOME   │   │  INSERT  │          │          │          │          │
+        //│ PG DOWN  │          │ DOWN     │          │    HOME  │   │  INSERT  │          │          │          │          │
             &kp PG_DN  &trans    &kp DARW   &trans     &kp HOME        &kp INS     &trans   &trans      &trans     &trans 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                           &lt sym ESC &mt LSFT ENTER    &trans     &trans
