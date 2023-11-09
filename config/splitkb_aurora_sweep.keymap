@@ -16,7 +16,7 @@
 
 &mt {
     flavor = "tap-preferred";
-    tapping_term_ms = <250>;
+    tapping_term_ms = <280>;
 };
 
 
@@ -61,7 +61,7 @@
                 , <&macro_tap &kp X>
                 , <&macro_release &kp LGUI>
                 , <&macro_tap &kp U>
-                , <&macro_tap &kp S>
+                , <&macro_tap &kp S>al
                 ;
         };
     };
@@ -100,7 +100,6 @@
             key-positions = <12 13>;
             bindings = <&kp LGUI>;
         };
-
 
        combo_rgui {
             timeout-ms = <50>;
