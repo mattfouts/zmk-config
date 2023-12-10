@@ -19,10 +19,6 @@
     tapping_term_ms = <280>;
 };
 
-&sk {
-    release-after-ms = <3000>; 
-};
-
 / {
     conditional_layers {
         compatible = "zmk,conditional-layers";
@@ -121,7 +117,7 @@
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │BACKSPACE │
-           &kp A        &kp S    &kp D     &kp F       &kp G         &kp H        &kp J      &kp K     &kp L     &bspc_del
+           &mt LCTRL A &mt LSHFT S &mt LALT D &mt LGUI F &kp G         &kp H    &mt LGUI J &mt LALT K &mt LSHFT L  &bspc_del
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ CTRL    │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &mt RCTRL ENTER
@@ -151,14 +147,14 @@
         nav_right_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ PG DOWN  │          │ UP       │          │    HOME  │   │  INSERT  │          │          │          │          │
-            &kp PG_DN  &trans    &kp UARW   &trans     &kp HOME        &kp INS     &trans   &trans      &trans     &trans 
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│   PG UP  │ LEFT     │   DOWN   │ RIGHT    │   END    |   |          │    GUI   │   ALT    │  SHIFT   │ CTRL   │
-            &kp PG_UP  &kp LARW   &kp DARW    &kp RARW   &kp END     &kp PSCRN    &sk LGUI  &sk LALT   &sk LSHFT  &kp CTRL 
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ 1        │  2       │  3       │  4       │  5       │   │ 6        │ 7        │ 8        │ 9        │   0      │
             &kp N1    &kp N2     &kp N3     &kp N4     &kp N5          &kp N6     &kp N7     &kp N8     &kp N9      &kp N0
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│   PG UP  │ LEFT     │   UP     │ RIGHT    │   END    |   |          │    GUI   │   ALT    │  CTRL    │ DELETE   │
+            &kp PG_UP  &kp LARW   &kp UARW    &kp RARW   &kp END     &kp PSCRN    &kp LGUI  &kp LALT   &kp LCTRL  &kp DEL 
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│ PG DOWN  │          │ DOWN     │          │    HOME  │   │  INSERT  │          │          │          │          │
+            &kp PG_DN  &trans    &kp DARW   &trans     &kp HOME        &kp INS     &trans   &trans      &trans     &trans 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                           &lt sym ESC &mt LSFT ENTER    &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
